@@ -24,8 +24,14 @@ h1 {
   word-spacing: 0.5cm;
 }
 
-a:link {
+a:link,
+a:visited {
+  background-color: #f44336;
   color: purple;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 a:hover {
