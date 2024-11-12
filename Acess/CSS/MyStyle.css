@@ -37,3 +37,9 @@ a:visited {
 a:hover {
   color: yellow;
 }
+
+@media (max-width: 767px) {
+  body {
+    background-color: lightblue;
+  }
+}
