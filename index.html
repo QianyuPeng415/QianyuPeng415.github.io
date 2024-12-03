@@ -1,70 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh">
   <head>
-    <title>Test File for HTML</title>
-    <link rel="icon" type="image/x-icon" href="Acess/IMG/google-logo.png" />
-    <link rel="stylesheet" href="Acess/CSS/MyStyle.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qianyu Peng's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
-
   <body>
-    <section>
-      <div class="font-sc-regular">
-        <div>
-          <h1>This is my div</h1>
+    <header>
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="profile-image.jpg" alt="Profile Logo" class="logo" />
+          <h1>HOME</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="final education page.html">Education</a></li>
+          <li><a href="final skills page.html">Skills</a></li>
+          <li><a href="final experience page.html">Experience</a></li>
+          <li><a href="final lifestyle page.html">Lifestyle</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="profile-section">
+        <img src="main-profile.jpg" alt="Qianyu Peng" class="profile-pic" />
+        <h2>Qianyu Peng</h2>
+        <p class="arsenal-sc-regular">
+          I am a soon-to-graduate student with a background in psychology and
+          data science. As an ISTJ, I focus on details and organization, and I
+          enjoy being efficient in my work. I love to travel and new places and
+          have a great passion for animals. I look forward to applying my skills
+          and interests in my career!
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact-item">
+        <p class="arsenal-sc-regular">Call</p>
+        <a class="arsenal-sc-regular" href="tel:+1234567890">4389260415</a>
+      </div>
+      <div class="contact-item">
+        <p class="arsenal-sc-regular">Email</p>
+        <a class="arsenal-sc-regular" href="mailto:info@mysite.com"
+          >qianyu.peng@mail.mcgill.ca</a
+        >
+      </div>
+      <div class="contact-item follow">
+        <p class="arsenal-sc-regular">Follow</p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/pqianyu?mibextid=LQQJ4d"
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_pen9uu_/profilecard/?igsh=MXZydnFycXhyYmg0dg=="
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
-    </section>
-    <header>
-      <nav></nav>
-    </header>
-    <footer></footer>
-
-    <h1 id="Heading-section-top">This is my Heading One</h1>
-    <h2 class="font-sc-regular">This is my Heading Two</h2>
-    <h2 class="font-color-pink">This is my heading 2 without inline CSS</h2>
-    <h1>This is another H1 tag</h1>
-    <br />
-    <br />
-    <br />
-    <hr />
-    <p class="font-color-pink">
-      This is a <b>paragraph text.</b>
-      <strike>More text is here.</strike> &#169;
-      <a href="About.html">About page view</a>
-    </p>
-    <h2>This is my Heading Two</h2>
-
-    <br />
-    <img src="Acess/IMG/Jerry.jpeg" alt="Jerry the Mouse" />
-    <br />
-
-    <br />
-    <video autoplay controls>
-      <source
-        src="https://pqina.nl/media/sample-mp4-file.mp4"
-        type="video/mp4"
-      />
-    </video>
-    <br />
-    <table border="1">
-      <tr>
-        <th rowspan="2">Company</th>
-        <th>Contact</th>
-        <th>Country</th>
-      </tr>
-      <tr>
-        <td colspan="2">Maria Anders</td>
-      </tr>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-      </tr>
-    </table>
+    </footer>
   </body>
 </html>

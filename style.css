@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff7f50; /* 悬停时的文字颜色 */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.profile-section {
+  max-width: 600px;
+  margin-top: 0rem;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  margin-bottom: 3rem;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 3.5em;
+  color: #ff7f50;
+  margin-top: -30px;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+footer {
+  display: flex;
+  margin-top: -25px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem 4rem;
+  background-color: #f3f3f3; /* 调整背景色与您的页面一致 */
+  color: #f3f3f3;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column; /* 垂直排列标题和内容 */
+  align-items: flex-start; /* 左对齐 */
+  text-align: left;
+}
+
+.contact-item p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px; /* 添加间距 */
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-item.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-item.follow a {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* 控制图标之间的间距 */
+}
+
+.social-icon {
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+  margin: 0 0px;
+}
+
+.social-icon:hover {
+  color: #888;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+.arsenal-sc-regular {
+  font-family: "Arsenal SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 教育页面样式 */
+
+.education-section {
+  color: #333;
+  padding: 0rem;
+  text-align: center;
+}
+
+.education-header h2 {
+  font-size: 6em;
+  color: #ff7f50;
+  margin-bottom: -1rem;
+  margin-top: 0rem;
+}
+
+.education-entry {
+  text-align: left;
+  max-width: 950px;
+}
+
+.education-time {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.education-entry h3 {
+  font-style: italic;
+  font-size: 2em;
+  color: #666;
+}
+
+.education-cgpa {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.education-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1em;
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #888;
+}
+
+/* 技术页面样式 */
+
+.skills-header h2 {
+  font-size: 6em;
+  color: #ff7f50;
+  margin-bottom: -1rem;
+  margin-top: 0rem;
+}
+
+.skills-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 3em;
+  color: #ff7f50;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  justify-items: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%; /* 确保每个技能项高度一致 */
+}
+
+.skill-item i {
+  font-size: 2.5rem; /* 增大图标尺寸 */
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem; /* 固定宽度，确保图标在所有项中对齐 */
+  height: 2.5rem; /* 固定高度，确保图标在所有项中对齐 */
+}
+
+.skill-details {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中对齐 */
+}
+
+.skill-details p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* 经历页面样式 */
+
+.experience-section {
+  color: #333;
+  padding: 0rem;
+  text-align: center;
+}
+
+.experience-header h2 {
+  font-size: 6em;
+  color: #ff7f50;
+  margin-bottom: -1rem;
+  margin-top: 0rem;
+}
+
+.experience-entry {
+  text-align: left;
+  max-width: 950px;
+}
+
+.experience-time {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 2.3rem;
+}
+
+.experience-entry h3 {
+  font-style: italic;
+  font-size: 2em;
+  color: #666;
+}
+
+.experience-location {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.experience-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  margin-left: 1rem;
+}
+
+/* 生活页面样式 */
+
+.lifestyle-header h2 {
+  font-size: 6em;
+  color: #ff7f50;
+  margin-bottom: -5rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+/* Base styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  width: 800px;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  display: none; /* Hide non-active items */
+}
+
+.carousel-item.active {
+  display: block; /* Show the active item */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.text-section {
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 1500px;
+  margin: 0 auto;
+}
