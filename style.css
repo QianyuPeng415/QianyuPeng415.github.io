@@ -425,3 +425,13 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
+
+.site-footer {
+  text-align: center; /* 居中对齐 */
+  padding: 1rem; /* 内边距，适当留白 */
+  background-color: #f3f3f3; /* 背景颜色，可根据你的页面主题调整 */
+  color: #333; /* 字体颜色 */
+  font-size: 0.9rem; /* 字体大小 */
+  position: relative; /* 确保不会遮挡页面内容 */
+  bottom: 0; /* 如果需要固定在底部，可设置此值 */
+  width: 100%; /* 占满页面宽度 */
